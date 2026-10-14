@@ -91,7 +91,7 @@
 ## 📸 Скриншоты
 
 ### VirtualBox
-![VirtualBox](img/VirtualBox.jpg)
+![VirtualBox](Img/VirtualBox.jpg)
 
 ### Виртуальные машины
-![Виртуальные машины](img/Setup.jpg)
+![Setup](Img/Setup.jpg)
