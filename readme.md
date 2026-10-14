@@ -31,8 +31,6 @@
 | **Client01**     | по DHCP (например, `10.0.2.4`) | DNS вручную указан `10.0.2.3` для поиска домена                |
 | Домен            | `TOONWRLD.local`            |                                                                   |
 
-> **Примечание:** IP-адресация в лаборатории обеспечивается встроенным DHCP VirtualBox NAT Network. Роль DHCP на Windows Server не разворачивалась.
-
 ## 🚀 Проделанные шаги
 
 ### Подготовка
@@ -93,7 +91,7 @@
 ## 📸 Скриншоты
 
 ### VirtualBox
-![VirtualBox](images/VirtualBox.jpg)
+![VirtualBox](img/VirtualBox.jpg)
 
 ### Виртуальные машины
-![Виртуальные машины](images/Setup.jpg)
+![Виртуальные машины](img/Setup.jpg)
