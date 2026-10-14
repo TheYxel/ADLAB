@@ -1,5 +1,12 @@
 # Домашняя лаборатория: Развертывание инфраструктуры Active Directory
 
+![VirtualBox](https://img.shields.io/badge/VirtualBox-7.2.20-2F61B4?logo=virtualbox&logoColor=white)
+![Windows Server](https://img.shields.io/badge/Windows_Server-2025-0078D4?logo=windows&logoColor=white)
+![Windows 11](https://img.shields.io/badge/Windows_11-Enterprise-0078D4?logo=windows&logoColor=white)
+![Active Directory](https://img.shields.io/badge/Active_Directory-AD_DS-0078D4?logo=microsoft&logoColor=white)
+![DNS](https://img.shields.io/badge/DNS-Service-4B8BBE?logo=cloudflare&logoColor=white)
+![Homelab](https://img.shields.io/badge/Homelab-Sysadmin-2C3E50?logo=linux&logoColor=white)
+
 ## 📋 Описание
 
 **Цель:** Построение домашней лаборатории Active Directory для практического изучения администрирования Windows Server.
@@ -8,7 +15,7 @@
 - **Серверная ОС:** Windows Server 2025
 - **Клиентская ОС:** Windows 11 Enterprise
 - **Службы:** Active Directory Domain Services (AD DS), DNS
-- **Домен:** TOONWRLD.local
+- **Домен:** ToonWrld.local
 
 ## 🖥️ Хостовая система (Test Environment)
 
@@ -29,7 +36,7 @@
 | DHCP-сервер      | `10.0.2.2`                  | Встроенный DHCP VirtualBox (раздаёт IP клиенту)                   |
 | **DC01**         | `10.0.2.3` (статический)    | Контроллер домена, DNS-сервер. DNS: `127.0.0.1`                   |
 | **Client01**     | по DHCP (например, `10.0.2.4`) | DNS вручную указан `10.0.2.3` для поиска домена                |
-| Домен            | `TOONWRLD.local`            |                                                                   |
+| Домен            | `ToonWrld.local`            |                                                                   |
 
 ## 🚀 Проделанные шаги
 
@@ -47,13 +54,13 @@
 - [x] Установлена поддержка **Guest Additions**
 - [x] В **Server Manager** установлена роль **Active Directory Domain Services**
 - [x] Система повышена до **контроллера домена**
-- [x] Назначено доменное имя **TOONWRLD.local**
+- [x] Назначено доменное имя **ToonWrld.local**
 
 ### Виртуальная машина Client01 (клиент)
 - [x] Создана ВМ: RAM — 8 ГБ, CPU — 2, вирт. диск 50 ГБ, сеть NAT: `AD_HOME_LAB`
 - [x] Установлена и настроена **Windows 11 Enterprise**
 - [x] Установлена поддержка **Guest Additions**
-- [x] Система присоединена к домену **TOONWRLD.local**
+- [x] Система присоединена к домену **ToonWrld.local**
 
 ## 🛠️ Список решенных проблем (Troubleshooting Log)
 
