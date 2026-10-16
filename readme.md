@@ -113,17 +113,17 @@
 - [ ] Развернуть роль DHCP Server на DC01.
 - [ ] Настроить File Server и Home Folders с маппингом сетевого диска через GPO.
 - [ ] Расширить PowerShell-скрипт: логирование, создание домашних папок, проверки на существование объектов.
-- 
+ 
 ## 📸 Скриншоты
 
-### 1. Виртуальная инфраструктура
-Две виртуальные машины — **DC01** (контроллер домена) и **CLIENT01** (клиент), объединённые в NAT-сеть `AD_HOME_LAB`.
+### 1. Виртуальная инфраструктура (VirtualBox)
+Две виртуальные машины — **DC01** (Windows Server 2025) и **Client01** (Windows 11), объединённые в NAT-сеть `AD_HOME_LAB`. В деталях DC01 видно: 8 ГБ ОЗУ, 2 vCPU, 50 ГБ диск, включена аппаратная виртуализация (Nested Paging, Hyper-V Paravirtualization).
 ![VirtualBox](Img/VirtualBox.jpg)
 
-### 2. Контроллер домена DC01
-Windows Server 2025 с развёрнутой ролью AD DS. Домен — `ToonWrld.local`.
+### 2. Контроллер домена и клиент в сети (Server Manager + Client01)
+Слева — **Server Manager** на DC01: роль AD DS активна, IP-адрес `10.0.2.3`, сервер в статусе Online. Справа — сетевые настройки клиента: подключён к домену `ToonWrld.local`, DNS-сервер вручную указан `10.0.2.3`, IP получен по DHCP (`10.0.2.4`).
 ![Server Manager](Img/Setup.jpg)
 
-### 3. Структура Active Directory
-Оснастка **Active Directory Users and Computers**: подразделения `Departments` (Business, Compression, Engineering), группа безопасности `BizOps` и учётные записи пользователей.
+### 3. Структура Active Directory (ADUC)
+Оснастка **Active Directory Users and Computers**: корневая OU `Departments` с вложенными подразделениями `Business`, `Compression`, `Engineering`. В `Business` создана группа безопасности `BizOps` и учётные записи пользователей.
 ![ADUC](Img/ADUC.jpg)
