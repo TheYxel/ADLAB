@@ -116,11 +116,14 @@
 - 
 ## 📸 Скриншоты
 
-### VirtualBox
+### 1. Виртуальная инфраструктура
+Две виртуальные машины — **DC01** (контроллер домена) и **CLIENT01** (клиент), объединённые в NAT-сеть `AD_HOME_LAB`.
 ![VirtualBox](Img/VirtualBox.jpg)
 
-### Виртуальные машины
-![Setup](Img/Setup.jpg)
+### 2. Контроллер домена DC01
+Windows Server 2025 с развёрнутой ролью AD DS. Домен — `ToonWrld.local`.
+![Server Manager](Img/Setup.jpg)
 
-### Настройка групп и пользователей 
-![Setup](Img/Users.jpg)
+### 3. Структура Active Directory
+Оснастка **Active Directory Users and Computers**: подразделения `Departments` (Business, Compression, Engineering), группа безопасности `BizOps` и учётные записи пользователей.
+![ADUC](Img/ADUC.jpg)
