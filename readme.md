@@ -4,6 +4,7 @@
 ![Windows Server](https://img.shields.io/badge/Windows_Server-2025-0078D4?logo=windows&logoColor=white)
 ![Windows 11](https://img.shields.io/badge/Windows_11-Enterprise-0078D4?logo=windows&logoColor=white)
 ![Active Directory](https://img.shields.io/badge/Active_Directory-AD_DS-0078D4?logo=microsoft&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5.1-5391FE?logo=powershell&logoColor=white)
 ![DNS](https://img.shields.io/badge/DNS-Service-4B8BBE?logo=cloudflare&logoColor=white)
 ![Homelab](https://img.shields.io/badge/Homelab-Sysadmin-2C3E50?logo=linux&logoColor=white)
 
